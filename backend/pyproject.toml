@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "merlin"
+version = "1.0.0"
+description = ""
+readme = "README.md"
+authors = ["qiankunli"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+fastapi = "^0.115.5"
+uuid6 = "^2024.7.10"
+greenlet = "^3.1.1"
+fastapi-sqlalchemy = "^0.2.1"
+pymysql = "^1.1.1"
+sqlalchemy = "^2.0.36"
+types-pymysql = "^1.1.0.20241103"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.4"
+
+[tool.poetry.group.lint.dependencies]
+mypy = "1.10.0"
+importanize = "0.7.0"
+ruff = "0.4.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[[tool.poetry.source]]
+name = "tuna"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"

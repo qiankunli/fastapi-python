@@ -1,0 +1,13 @@
+**/__pycache__/
+__pycache__/
+**/__pycache__%
+venv/
+.venv/
+.pdm-python
+*.sqlite.db
+*/.env
+.env
+.idea/
+*/.idea/
+*/lid.176.bin
+backend/tests/tiktoken_resource
